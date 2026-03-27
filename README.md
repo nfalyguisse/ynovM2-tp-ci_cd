@@ -1,4 +1,7 @@
 # tp-ci_cd
+## Mmebres du groupe
+- Melissa AIT OUARAB
+- Nfaly GUISSE
 
 ## 🚀 Release Process
 
