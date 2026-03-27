@@ -282,7 +282,7 @@ Car on ne respecte pas le principe d'immuabilité.
 Qualité, car on tests obligatoirement avant d'intégrer le code, on évite la régréssion.
 
 * Qu’est-ce qui garantit la traçabilité ici ?
-La traçabilité est maintenu grâce à l'utilisation des release
+La traçabilité est maintenu grâce à l'utilisation des tags tel que les versions ou sha.
 
 
 ## Partie 5 📘 SECTION README — Release Process
