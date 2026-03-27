@@ -55,3 +55,30 @@ Ce projet suit un processus de versioning et de release strict pour garantir la 
 - `latest` : pointeur mouvant vers la derniere image stable, pas une version.
 - `sha` : identifie un commit precis, utile pour la tracabilite.
 - `vX.Y.Z` : version immuable, ne doit jamais etre reconstruite.
+
+
+
+## Questions écrites
+
+* Pourquoi `latest` n’est pas une version ?
+Réponse :
+Latest n'est pas une version car ça nous permet pas de déterminer quel version du code exact nous éxécutons.
+
+* Différence tag vs digest ?
+Réponse :
+Le tag est un alias défini par l'humain qui pointe vers une image. Le digest est un identifiant générer et immuable qui pointe vers un contenu exact.
+
+* Pourquoi séparer staging/prod ?
+Réponse :
+C'est par principe d'organisation, il faut toujours distinguer la production qui est accessible aux utilisateurs finaux et la préprod qui celle ci représente l'étape de "test" avant de livré l'application.
+
+* Pourquoi une version `vX.Y.Z` ne doit jamais être reconstruite ?
+
+Réponse :
+Car on ne respecte pas le principe d'immuabilité.
+
+* Citez les avantages d'une PR gate.
+Qualité, car on tests obligatoirement avant d'intégrer le code, on évite la régréssion.
+
+* Qu’est-ce qui garantit la traçabilité ici ?
+La traçabilité est maintenu grâce à l'utilisation des tags tel que les versions ou sha.
