@@ -1,0 +1,22 @@
+name: Main - CI (test, build & push)
+
+on:
+[...]
+
+permissions:
+  contents: read
+
+env:
+  [...]
+
+jobs:
+  build-test-push:
+    runs-on: ubuntu-latest
+    steps:
+      [...]
+
+      - name: Login to Docker Hub
+        [...]
+
+      - name: Build and push
+        [...]
